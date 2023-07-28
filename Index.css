@@ -26,17 +26,18 @@
     backdrop-filter: blur(6px);
     border-radius: 17px;
     text-align: center;
-    cursor: pointer;
     transition: all 0.5s;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     user-select: none;
     font-weight: bolder;
     color: black;
+    opacity: 0;
+    transition: 1s;
   }
   .active{
-    display: flex;
+    opacity: 1;
   }.deactive{
     opacity: 0;
   }
@@ -48,3 +49,7 @@
     margin-top: 5px;
     border: 2px solid none;
   }
+.btn{
+  z-index: 1;
+  transition: 0.4s;
+}
