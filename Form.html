@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh; 
+           color: #fff;
+        }
+        .form-container{
+            background-color: #74203e;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+        }
+        .form-container form{
+            margin: 40px;
+        }
+        .btn{
+            padding: 5px 50px;
+        }
+        input{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="container">
+        <div class="form-container">
+            <form action="/submit" method="post">
+                <label for="name">Name : </label>
+                <input type="text" placeholder="your name"> <br>
+                <label for="email">Email : </label>
+                <input type="email" placeholder="your email"> <br>
+                <label for="">Password : </label>
+                <input type="password"> <br>
+                <label for="phonenumber">Phone Number : </label>
+                <input type="number"> <br>
+        
+                <label>Gender : </label>
+                
+                <label for="contactChoice1">Male</label>
+                <input type="radio" id="contactChoice1" name="contact" value="male" />
+          
+                <label for="contactChoice2">Female</label>
+                <input type="radio" id="contactChoice2" name="contact" value="Female" />
+          
+                <label for="contactChoice3">other</label>
+                <input type="radio" id="contactChoice3" name="contact" value="other" /> <br>
+               
+                <label for="bookCategory">Language :</label>
+                <select id="language" name="language">
+                    <option value="Select">Select Language</option>
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                </select>
+                <br>
+                <label for="zipcode">ZipCode : </label>
+                <input type="number"><br>
+                <label for="about">About:</label>
+                <textarea name="about" placeholder="Write about yourself..." cols="30" rows="3"></textarea><br>
+               
+                <input class="btn" type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

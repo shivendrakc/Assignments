@@ -1,0 +1,111 @@
+Guidelines
+
+A. Homepage
+Homepage must consist of the company logo, brief introduction about the business, and links
+to other web pages of the website
+
+B. Car Seller Registration
+Seller registration allows the system to validate the sellers’ details and the system must send
+back notification if any field is empty.
+This page should prompt sellers to fill a form with fields for
+• Name
+• Address
+• Phone number
+• Email address
+• Username
+• Password
+
+C. Seller Page
+This page should provide the following links for the sellers to manage the advertisement of
+their cars after successfully logging in: Login, Add car. the system must send back notification
+if any field is empty.
+i) Login page - This page should prompt sellers to fill a login form with fields
+for:
+• Username
+• Password
+ii) Add car - This page should request user to fill in the form with field for:
+• Make
+• Model
+• Year
+• Milage
+• Location
+• Price
+
+D. Search Page
+Search page allows the users to find car(s) that they are looking for by typing the model and
+location.
+
+E. About Us page
+You should provide full name of business, location of main office, telephone/fax numbers, email address, staff names and picture of staff
+
+F. Dynamic content
+You are required to write JavaScript to achieve the following:
+• The background color of each form input must change to yellow when it is selected.
+• Background color of each form input must change to white when user leaves input
+field.
+• Background color of each button must change to light blue when the mouse pointer is
+moving onto a button.
+
+
+
+
+The detail of marking scheme is given below:
+No. Criteria Marks
+poor average good
+    1 Home Page (6 marks):
+        • Page design:
+        1. Responsive to browsers
+        2. Consistency
+        3. Contrast
+        4. Alignment and white space
+        5. Simplicity
+        6. Style
+        • A Company Logo - original
+        • A Company mission statement
+        • Navigation bar
+        • Source code was original (not copied)
+    2 Registration Page (6 marks):
+        • Page design:
+        o Responsive to browsers
+        o Consistency
+        o Contrast
+        o Alignment and white space
+        o Simplicity
+        o Style
+        • Form elements
+        • Navigation bar
+        • Source code was original (not copied)
+    3 Seller Page (9 marks):
+        • Page design:
+        1. Responsive to browsers
+        2. Consistency
+        3. Contrast
+        4. Alignment and white space
+        5. Simplicity
+    6. Style
+        • Add car form
+        • Login form
+        • Navigation bar
+        • Source code was original (not copied)
+    5 Search forms (3 marks)
+        • Page design:
+        1. Responsive to browsers
+        2. Consistency
+        3. Contrast
+        4. Alignment and white space
+        5. Simplicity
+        6. Style
+        • Form elements
+        • Navigation bar
+        • Source code was original (not copied)
+    6 About US (4 marks)
+        • Page design:
+        1. Responsive to browsers
+        2. Consistency
+        3. Contrast
+        4. Alignment and white space
+        5. Simplicity
+        6. Style
+        • Navigation bar
+        • Details of the company’s physical location
+        • Source code was original (not copied) 
