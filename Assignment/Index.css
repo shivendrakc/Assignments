@@ -12,21 +12,12 @@
   box-sizing: border-box;
 }
 body{
-/*background-color: #4a3c98;
-background-image: linear-gradient(62deg, #4a3c98 0%, #ffffff 100%);
-*/
-background-image: url(Pictures/2010.i123.005..car\ headlights\ AD\ composition.jpg);
-height: 100%;
-
-/* Center and scale the image nicely */
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-color: white;
+  color: white;
 }
+
+/*======================== HOME PAGE =============================*/
 .container{
   font-family: 'Poppins', sans-serif;
-  min-height: 100vh;
   text-align: end;
 }
 .header{
@@ -59,38 +50,38 @@ color: white;
 }
 .nav-container ul li a:hover{
   border-bottom: 2px solid var(--main-color);
-  border-top: 2px solid var(--main-color);
-  
 }
 .logo{
   color: black;
   margin: 10px 0px 10px 30px;
   font-size: 25px;
 }
-.nav-container ul li a.login{
-  /*background-color: var(--main-color);*/
-  color: #fff;
-}
+
 .font-svg{
   fill: var(--main-color);
   width: 3em;
 }
-.nav-container ul li a.login:hover{
-   /*background-color: #fff;*/
-   color: var(--main-color);
-}
+
 
 /*Main*/
 .section{
-  height: 80vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   Display: flex;
   justify-content: center;
   align-items: center;
-}
-.section1{
-  margin: 55px;
-}
-
+  background-image: url(Pictures/2010.i123.005..car\ headlights\ AD\ composition.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  }
+  .section1-content{
+    width: 90%;
+  }
 .moto{
   letter-spacing: 1px;
 }
@@ -123,6 +114,7 @@ color: white;
   text-align: end;
 }
 
+/*============================BUTTONS==========================*/
 
 .btn{
   background-color: var(--main-color);
@@ -135,8 +127,6 @@ color: white;
   cursor: pointer;
   position: relative;
 }
-
-
 .btn:after {
   content: '>>';
   position: absolute;
@@ -156,111 +146,81 @@ color: white;
   opacity: 1;
   right: 10px;
 }
-/* Seciton 2 */
 
-.section2{
-  height: 90vh;
+
+/* =========================REGISTER========================== 2 */
+
+.section-2{
+  background-image: url(Pictures/high-angle-man-woman-dealership.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  height: 80vh;
+  margin-top: 58px;
+  text-align: start;
+}
+.overlay{
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card-container{
+.blur-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 80%;
-  background-color: white;
-  display: flex;
-  height: 80%;
-  box-shadow: rgba(133, 58, 58, 0.5) 0px 5px 15px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
   border-radius: 20px;
 }
-.section2-header{
-  margin: 20px;
-  color: var(--main-color);
-  position: relative;
-}
-.section2-header:after{
-  position: absolute;
-  content: " ";
-  height: 3px;
-  width: 4%;
-  border-radius: 30%;
-  bottom: 0px;
-  left: 0px;
-  top: 35px;
-  background-color: var(--main-color);
-} 
-.service-containers{
+.service-moto{
+  display: flex;
   width: 100%;
-  height: 75%;
+  align-items: start;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 4cm;
+}
+.card-container{
   display: flex;
-}
-.container1{
-  flex: 1;
-  background-color: blue;
-}
-.container2{
-  background-color: green;
-  flex: 1;
-}
-
-
-/*SectionA2*/
-.sectionA2{
-  flex-direction: column;
-}
-.card-container-A2{
-  color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  align-items: center;
-  min-height: 60vh;
   justify-content: center;
-  
+  margin: 2cm 1cm 0cm 1cm;
+  max-width: 60%;
+}
+.sell-container{
+  margin-right: 2rem;
+  background-color: #fff;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+.buy-container{
+  margin-left: 2rem;
+  padding: 20px;
+  border-radius: 10px; 
+  background-color: #fff;
+  color: black;
+}
+.icon{
+  font-size: 30px;
+  padding: 20px;
+  color: var(--main-color);
+}
+.buy-container h1, .sell-container h1{
+  padding: 10px;
+}
+.buy-container p, .sell-container p{
+  font-size: 14px;
+}
+.btn-buy, .btn-sell{
+  padding: 10px 45px;
+  margin: 10px;
 }
 
-.heading h1{
-  margin: 2cm 0px 2.5cm 50px;
-  font-size: 50px;
-  color: var(--Second-color);
-}
-.h2-1{
-  width: 70%;
-}
-.h2-2{
-  width: 40%;
-  margin-left: auto;
-}
-.card1-A2, .card2-A2{
-  display: flex;
-  width: 100%;
-  flex: 1;
-  margin: 
-}
-
-.card1-pic, .card2-pic, .card1-content, .card2-content{
-  flex: 1;
-}
-.card1-content, .card2-content{
-  text-align: center;
-  margin-top: 30px;
-}
-.card1-content p{
-  margin-top: 1cm;
-}
-.car-pic{
-  width: 300px;
-  height: 200px;
-}
-.card1-pic img{
-  margin-left: 2cm;
-}
-.card2-pic img{
-  width: 400px;
-  margin-bottom: 4cm;
-}
-.card1-content, .card2-content p{
-
-}
-/*FOOTER*/
 
