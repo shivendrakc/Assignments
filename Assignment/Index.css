@@ -18,16 +18,12 @@ body{
 /*======================== HOME PAGE =============================*/
 .container{
   font-family: 'Poppins', sans-serif;
-  text-align: end;
 }
 .header{
   display: flex;
   justify-content: space-between;
   background-color: white;
   box-shadow: 1px 10px 15px #0000000a;
-  position: fixed;
-  top: 0;
-  z-index: 99;
   width: 100%;
 }
 .nav-container ul{
@@ -64,12 +60,10 @@ body{
 
 
 /*Main*/
-.section{
-  position: fixed;
-  top: 0;
-  left: 0;
+.main-container{
+  
   width: 100%;
-  height: 100%;
+  height: 89vh;
   Display: flex;
   justify-content: center;
   align-items: center;
@@ -78,10 +72,13 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+}
+.section{
+ 
   }
-  .section1-content{
-    width: 90%;
-  }
+.section1-content{
+  text-align: end;  
+}
 .moto{
   letter-spacing: 1px;
 }
@@ -146,6 +143,10 @@ body{
   opacity: 1;
   right: 10px;
 }
+.btn a{
+  text-decoration: none;
+  color: white;
+}
 
 
 /* =========================REGISTER========================== 2 */
@@ -156,8 +157,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-  height: 80vh;
-  margin-top: 58px;
+  height: 81vh;
   text-align: start;
 }
 .overlay{
@@ -176,16 +176,16 @@ body{
   width: 80%;
   margin: auto;
   text-align: center;
+  margin-top: 3.8rem;
   padding: 20px;
   border-radius: 20px;
 }
 .service-moto{
   display: flex;
   width: 100%;
-  align-items: start;
   font-size: 30px;
   font-weight: bold;
-  margin-right: 4cm;
+  justify-content: center;
 }
 .card-container{
   display: flex;
@@ -195,7 +195,7 @@ body{
 }
 .sell-container{
   margin-right: 2rem;
-  background-color: #fff;
+  background-color: #ffffff90;
   color: black;
   padding: 20px;
   border-radius: 10px;
@@ -204,7 +204,7 @@ body{
   margin-left: 2rem;
   padding: 20px;
   border-radius: 10px; 
-  background-color: #fff;
+  background-color: #ffffff90;
   color: black;
 }
 .icon{
@@ -216,6 +216,7 @@ body{
   padding: 10px;
 }
 .buy-container p, .sell-container p{
+  margin-bottom: 15px;
   font-size: 14px;
 }
 .btn-buy, .btn-sell{
@@ -224,3 +225,42 @@ body{
 }
 
 
+/*=======================FOOTER=========================*/
+
+.footer-container{
+  background-color: rgba(0, 0, 0, 0.816);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container p{
+  margin: 0px 20px;
+}
+
+/*===========================================FORM================================*/
+
+/*=========================Registration FORM==================*/
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.form-card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  min-height: 80vh;
+  margin: auto;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.back-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
