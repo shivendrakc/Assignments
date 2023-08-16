@@ -1,73 +1,337 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root{
+  --main-color: #5cc7cc;
+  --second-color: #cdfbff;
+}
+
 *{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+body{
+  color: white;
+}
+
+/*======================== HOME PAGE =============================*/
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: rgb(178, 127, 127);
+  font-family: 'Poppins', sans-serif;
 }
-.popup-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 1px 10px 15px #0000000a;
+  width: 100%;
 }
-.card {
-    position: absolute;
-    box-sizing: border-box;
-    width: 190px;
-    height: 254px;
-    background: rgba(217, 217, 217, 0.58);
-    border: 1px solid white;
-    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-    backdrop-filter: blur(6px);
-    border-radius: 17px;
-    text-align: center;
-    transition: all 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    font-weight: bolder;
-    color: black;
-    opacity: 0;
-    transition: 1s;
-  }
-  .active{
-    opacity: 1;
-  }.deactive{
-    opacity: 0;
-  }
-  .close{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 5px;
-    margin-top: 5px;
-    border: 2px solid none;
-  }
-  .close:hover {
-    opacity: 1;
-  }
-  .close:before, .close:after {
-    position: absolute;
-    left: 0px;
-    content: ' ';
-    height: 23px;
-    width: 2px;
-    background-color: #333;
-  }
-  .close:before {
-    transform: rotate(45deg);
-  }
-  .close:after {
-    transform: rotate(-45deg);
-  }
+.nav-container ul{
+  display: flex;
+  margin-top: 13px;
+  justify-content: space-between;
+}
+.nav-container ul li{
+  list-style: none;
+  cursor: pointer;
+}
+.nav-container ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  transition: 0.3s;
+  padding: 20px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.nav-container ul li a:hover{
+  border-bottom: 2px solid var(--main-color);
+}
+.logo{
+  color: black;
+  margin: 10px 0px 10px 30px;
+  font-size: 25px;
+}
+
+.font-svg{
+  fill: var(--main-color);
+  width: 3em;
+}
+
+
+/*Main*/
+.main-container{
   
-.btn{
-  z-index: 1;
-  transition: 0.4s;
+  width: 100%;
+  height: 89vh;
+  Display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(Pictures/2010.i123.005..car\ headlights\ AD\ composition.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
+.section{
+ 
+  }
+.section1-content{
+  text-align: end;  
+}
+.moto{
+  letter-spacing: 1px;
+}
+.moto-0{
+  font-weight: 400;
+}
+.moto-1{
+  font-size: 40px;
+  color: var(--second-color);
+}
+.rev{
+  position: relative;
+}
+.rev:after{
+  position: absolute;
+  content: " ";
+  height: 3px;
+  width: 50%;
+  border-radius: 30%;
+  bottom: -2px;
+  left: 0px;
+  background-color: var(--main-color);
+}
+.sub-moto p{
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  width: 40%;
+  margin-left: auto;
+  text-align: end;
+}
+
+/*============================BUTTONS==========================*/
+
+.btn{
+  background-color: var(--main-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  letter-spacing: 1.1px;
+  transition: 0.6s;
+  cursor: pointer;
+  position: relative;
+}
+.btn:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  right: 20px;
+  transition: 0.5s;
+  bottom: 9px;
+  color: #fff;
+}
+
+.btn:hover{
+  padding-right: 34px;
+  padding-left:10px;
+}
+
+.btn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+
+/* =========================REGISTER========================== 2 */
+
+.section-2{
+  background-image: url(Pictures/high-angle-man-woman-dealership.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  height: 81vh;
+  text-align: start;
+}
+.overlay{
+  background-color: rgb(13 27 28 / 82%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blur-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 3.8rem;
+  padding: 20px;
+  border-radius: 20px;
+}
+.service-moto{
+  display: flex;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--second-color);
+}
+.card-container{
+  display: flex;
+  justify-content: center;
+  margin: 2cm 1cm 0cm 1cm;
+  max-width: 60%;
+}
+.sell-container{
+  margin-right: 2rem;
+  background-color: #ffffff90;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+.buy-container{
+  margin-left: 2rem;
+  padding: 20px;
+  border-radius: 10px; 
+  background-color: #ffffff90;
+  color: black;
+}
+.icon{
+  font-size: 30px;
+  padding: 20px;
+  color: var(--main-color);
+}
+.buy-container h1, .sell-container h1{
+  padding: 10px;
+}
+.buy-container p, .sell-container p{
+  margin-bottom: 15px;
+  max-width: 60ch;
+  font-size: 14px;
+}
+.btn-buy, .btn-sell{
+  padding: 10px 45px;
+  margin: 10px;
+}
+
+
+/*=======================FOOTER=========================*/
+
+.footer-container{
+  background-color: rgba(0, 0, 0, 0.816);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container p{
+  margin: 0px 20px;
+}
+
+/*===========================================FORM================================*/
+
+/*=========================Registration FORM==================*/
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.forms-container-inner{
+  position: relative;
+  width: 30%;
+  height: 77vh;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+/*.forms-container-inner:hover{
+  transform: rotateY(180deg);
+}*/
+.back-box, .front-box{
+   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.front-box{
+}
+.back-box{
+  transform: rotateY(180deg);
+}
+.form-card-container-front, .form-card-container-back{
+  display: flex;
+  justify-content: center;
+  min-height: 75vh;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.form-card-container-front h1{
+  margin: 13px;
+}
+.form-card-container-front form{
+  width: 75%;
+  margin: auto;
+}
+.input-box input{
+  padding: 5px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  color: white;
+  margin-bottom: 10px;
+}
+.input-box input:focus{
+  outline: none;
+}
+.input-box input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: var(--main-color);
+  color: white;
+  padding: 14px 20px;
+  margin: 25px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+form h6{
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+.back-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: blue;
+}
+.btn-login{
+  padding: 5px 20px;
+}
+
