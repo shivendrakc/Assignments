@@ -8,42 +8,72 @@
 </head>
 <body>
     <div class="container form-container">
-       
-        <div class="form-card-container">
-           
-                <button class="btn back-btn"><a href="Index.html">Back</a></button>
-    
-            <form action="" method="POST">
-                <div class="input-box">
-                    <label for="name">Name</label> <br>
-                    <input type="text" id="name" name="name" required> <br>
-                </div>
-                <div class="input-box">
-                    <label for="email">Email</label> <br>
-                    <input type="email" id="email" name="email" required> <br>
-                </div>
-                <div class="input-box">
-                    <label for="number">Phone Number</label> <br>
-                    <input type="number" id="number" name="number" required> <br>
-                </div>
-                <div class="input-box">
-                    <label for="address">Address</label> <br>
-                    <input type="text" id="address" name="address" required> <br>
-                </div>
-                <div class="input-box">
-                    <label for="username">Username</label> <br>
-                    <input type="text" id="username" name="username" required> <br>
-                </div>
-                <div class="input-box">
-                    <label for="password">password</label> <br>
-                    <input type="password" id="password" name="password" required> <br>
-                </div>
-                <div class="submit-button">
-                    <input type="button" value="Register">
-                </div>
-               </form> 
+        <div class="forms-container-inner">
+
+           <div class="front-box">
+            <div class="form-card-container-front">
+                <a href="Register.html"><button class="back-btn">Go Back </button></a>
+                <h1>LOGIN</h1>
+                <form action="" method="POST">
+                    <div class="input-box">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" placeholder="Enter your username or email">
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" placeholder="Enter your password">
+                    </div>
+                     <div class="submit-button">
+                            <input type="submit" value="Login">
+                        </div>
+                    <h6>Dont have an account ? <button type="button" class="btn-register">REGISTER</button></h6>
+                </form>
+
+            </div>
            </div>
-       
+
+           <div class="back-box">
+                <div class="form-card-container-back">         
+                    <h1 class="form-header">NEW HERE?</h1>
+                    <form action="" method="POST">
+                        <div class="input-box">
+                            <label for="name">Name</label> <br>
+                            <input type="text" id="name" name="name" placeholder="Enter your name"required> <br>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Email</label> <br>
+                            <input type="email" id="email" name="email" required> <br>
+                        </div>
+                        <div class="input-box">
+                            <label for="number">Phone Number</label> <br>
+                            <input type="number" id="number" name="number" required> <br>
+                        </div>
+                        <div class="input-box">
+                            <label for="address">Address</label> <br>
+                            <input type="text" id="address" name="address" required> <br>
+                        </div>
+                        <div class="input-box">
+                            <label for="username">Username</label> <br>
+                            <input type="text" id="username" name="username" required> <br>
+                        </div>
+                        <div class="input-box">
+                            <label for="password">password</label> <br>
+                            <input type="password" id="password" name="password" required> <br>
+                        </div>
+                        <div class="submit-button">
+                            <input type="submit" value="Register">
+                        </div>
+                       <h6>Already registered ? <button type="button" class="btn-login">LOGIN</button></h6> 
+
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+    <footer class="footer-container">
+        <p>Designed and Developed By Shivendra K C</p>
+        <p>&copy; 2023 GearShift. All rights reserved.</p>
+      </footer>
+    <script type="text/javascript" src="Index.js"></script>
 </body>
 </html>
