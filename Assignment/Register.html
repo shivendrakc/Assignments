@@ -11,46 +11,324 @@
 <body>
     <div class="container">
         <header class="header">
-        <div class="logo">
-          GearShift
-        </div>
-        <div class="nav-container">
-          <ul>
-            <li><a href="Index.html">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="Register.html">Services</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="Login.html" class="login">
-              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="font-svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg></a></li>
-          </ul>
-        </div>
-      </header>
-      <main class="service-main-container">
+          <div class="logo">
+            GearShift
+          </div>
+          <div class="nav-container">
+            <ul>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="Register.html">Services</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="Login.html" class="login">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="font-svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg></a></li>
+            </ul>
+          </div>
+        </header>
+      <main class="main service-main-container">
         <section class="section-2">
           <div class="overlay">
-            <div class="blur-container">
-              <div class="service-moto"> Transform Your Journey with Us</div>
-              <div class="card-container">
-                <div class="sell-container">
-                  <i class="icon fa-solid fa-money-bill-wave"></i>
-                  <h1>Sell Your Car</h1>
-                  <p>"Ready to Upgrade? Sell Your Car with Ease! Get Top Dollar for Your Vehicle with Our Hassle-Free Selling Process. Your Next Adventure Awaits – Sell Now!</p>
-                  <a href="Login.html"><button class="btn btn-sell">Sell your Car</button></a>
+            <div class="slider">
+                <div class="slides">
+                  
+                  <div id="slide1" class="blur-container">
+                    <div class="service-moto"> Transform Your Journey with Us</div>
+                    <div class="card-container">
+                      <div class="sell-container">
+                        <i class="icon fa-solid fa-money-bill-wave"></i>
+                        <h1>Sell Your Car</h1>
+                        <p>"Ready to Upgrade? Sell Your Car with Ease! Get Top Dollar for Your Vehicle with Our Hassle-Free Selling Process. Your Next Adventure Awaits – Sell Now!</p>
+                        <a href="#slide"><button class="btn btn-sell">Sell your Car</button></a>
+                      </div>
+                      <div class="buy-container">
+                        <i class="icon fa-solid fa-car-side"></i>
+                        <h1>Buy a car</h1>
+                        <p>Discover Your Ideal Ride with Us. Explore a Diverse Range of Quality Cars That Match Your Desires. Your Dream Car Awaits – Start Your Journey Today!</p>
+                        <a href="#slide3"><button class="btn btn-buy">Buy a Car</button></a>
+                      </div>
+                    </div>
+                    <div class="search-bar-container">
+                      <input type="text" id="search" placeholder="What are you looking for?"><button class="search-btn">Search</button>
+                    </div>
+                  </div>
+                 
+                  <div id="slide" class="sliding-section">
+                    <div class="inner-container">
+                      <a href="#slide1"><button class="back-btn slide1-btn">Back</button></a>
+                    <div class="selling-heading">
+                      <h1>Add a Car</h1>
+                    </div>
+                    <div class="addcar-form-container">
+                      <form action="" POST="method">
+
+                       <div class="input-box">
+                        <label for="make">Make</label><br>
+                        <input type="number" id="make"><br>
+                       </div>
+                        <div class="input-box">
+                          <label for="model">Model</label><br>
+                        <input type="text" id="model"><br>
+                        </div>
+                        <div class="input-box">
+                          <label for="year">Year</label><br>
+                          <input type="number" id="year"><br>
+                        </div>
+                        <div class="input-box">
+                          <label for="milage">Milage</label><br>
+                          <input type="text" id="Milage"><br>
+                        </div>
+                        <div class="input-box">
+                          <label for="location">Location</label><br>
+                          <input type="text" id="Location"><br>
+                        </div>
+                        <div class="input-box">
+                          <label for="Price">Price</label><br>
+                        <input type="text" id="Price"><br>
+                        </div>
+
+                        <input type="submit" value="Submit" id="Submit">
+                      </form>
+                    </div>
+                    </div>
+                  </div>
+                  
                 </div>
-                <div class="buy-container">
-                  <i class="icon fa-solid fa-car-side"></i>
-                  <h1>Buy a car</h1>
-                  <p>Discover Your Ideal Ride with Us. Explore a Diverse Range of Quality Cars That Match Your Desires. Your Dream Car Awaits – Start Your Journey Today!</p>
-                  <a href="Login.html"><button class="btn btn-buy">Buy a Car</button></a>
-                </div>
-              </div>
-              <div class="search-bar-container">
-                <input type="text" id="search" placeholder="What are you looking for?"><button class="search-btn">Search</button>
               </div>
             </div>
-          </div>
         </section>
+        <section class="section3" id="slide3">
+          <div class="heading">
+            <h1>Our Collection</h1>
+          </div>
+          </div>
+          <div class="wrapper">
+            <div class="vehicle-card">
+              <div class="details">      
+                <div class="thumb-gallery">
+                  <img class="first" src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/03/2018-Bugatti-Chiron-119.jpg?crop=1xw:1xh;center,center&resize=480:*" />
+                  <img class="second" src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/03/2018-Bugatti-Chiron-117.jpg?crop=1xw:1xh;center,center&resize=480:*" />        
+                </div>
+                <div class="info">
+                    <h3>Bugatti Chiron</h3>
 
+                  <div class="price">
+                    <span>Price Starting at</span>
+                    <h4>$2,998,000</h4>
+                  </div>
+                  <div class="ctas">
+                    <a href="#" class="btn-car primary">Model Details</a>
+                    <a href="#" class="btn-car secondary">Cars for Sale</a>
+                        <div style="clear:both;"></div>
+                      </div>
+                  <div class="desc">
+                    <p>Leaving the 99.99 percent in its dust, the Chiron is a 1500-hp smackdown of every hypercar.</p>
+                  </div>
+                  <div class="specs">
+                    <div class="spec mpg">
+                      <span>EPA City/Hwy</span>
+                      <p>9/14<span>mpg</p>
+                    </div>
+                    <div class="spec mpg">
+                      <span>0-60</span>
+                      <p>2.3<span>sec</p>
+                    </div>
+                    <div class="spec mpg">
+                      <span>Horsepower</span>
+                      <p>1500<span>hp</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vehicle-card">
+              <div class="details">      
+                <div class="thumb-gallery">
+                  <img class="first" src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/09/2018-Mercedes-AMG-GT-GTC-116.jpg?crop=1xw:1xh;center,center&resize=480:*" />
+                  <img class="second" src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/09/2018-Mercedes-AMG-GT-GTC-114.jpg?crop=1xw:1xh;center,center&resize=480:*" />        
+                </div>
+                <div class="info">
+                    <h3>Mercedes-AMG GT</h3>
+                  <div class="price">
+                    <span>Price Starting at</span>
+                    <h4>$157,995</h4>
+                  </div>
+                  <div class="ctas">
+                    <a href="#" class="btn-car primary">Model Details</a>
+                    <a href="#" class="btn-car secondary">Cars for Sale</a>
+                        <div style="clear:both;"></div>
+                      </div>
+                  <div class="desc">
+                    <p>Sporting an adaptive adjustable suspension, active aerodynamics, and trick rear-axle steering.</p>
+                  </div>
+                  <div class="specs">
+                    <div class="spec mpg">
+                      <span>EPA City/Hwy</span>
+                      <p>16/22<span>mpg</p>
+                    </div>
+                    <div class="spec mpg">
+                      <span>0-60</span>
+                      <p>3.5<span>sec</p>
+                    </div>
+                    <div class="spec mpg">
+                      <span>Horsepower</span>
+                      <p>503<span>hp</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vehicle-card">
+              <div class="details">      
+                <div class="thumb-gallery">
+                  <img class="first" src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-111.jpg?crop=1xw:1xh;center,center&resize=480:*" />
+                  <img class="second" src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-101.jpg?crop=1xw:1xh;center,center&resize=480:*" />        
+                </div>
+                <div class="info">
+                    <h3>Lamborghini Huracan</h3>
+                  <div class="price">
+                    <span>Price Starting at</span>
+                    <h4>$203,295</h4>
+                  </div>
+                  <div class="ctas">
+                    <a href="#" class="btn-car primary">Model Details</a>
+                    <a href="#" class="btn-car secondary">Cars for Sale</a>
+                        <div style="clear:both;"></div>
+                      </div>
+                  <div class="desc">
+                    <p>Nothing on Earth can prepare you for the eyeball-melting performance.</p>
+                  </div>
+                  <div class="specs">
+                    <div class="spec mpg">
+                      <span>EPA City/Hwy</span>
+                      <p>14/20<span>mpg</p>
+                    </div>
+                    <div class="spec mpg">
+                      <span>0-60</span>
+                      <p>2.5<span>sec</p>
+                    </div>
+                    <div class="spec mpg">
+                      <span>Horsepower</span>
+                      <p>602<span>hp</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vehicle-card">
+              <div class="details">      
+                <div class="thumb-gallery">
+                  <img class="first" src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/06/2018-Ferrari-812-Superfast-115.jpg?crop=1xw:1xh;center,center&resize=480:*" />
+                  <img class="second" src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/06/2018-Ferrari-812-Superfast-101.jpg?crop=1xw:1xh;center,center&resize=480:*" />        
+                </div>
+                <div class="info">
+                    <h3>Ferrari 812 Superfast</h3>
+                  <div class="price">
+                    <span>Price Starting at</span>
+                    <h4>$315,000</h4>
+                  </div>
+                  <div class="ctas">
+                    <a href="#" class="btn-car primary">Model Details</a>
+                    <a href="#" class="btn-car secondary">Cars for Sale</a>
+                        <div style="clear:both;"></div>
+                      </div>
+                  <div class="desc">
+                    <p>With a claimed top speed of 211 mph, the name 812 Superfast is not mere hyperbole.</p>
+                  </div>
+                  <div class="specs">
+                    <div class="spec mpg">
+                      <span>EPA City/Hwy</span>
+                      <p>12/16<span>mpg</p>
+                    </div>
+                    <div class="spec mpg">
+                      <span>0-60</span>
+                      <p>2.8<span>sec</p>
+                    </div>
+                    <div class="spec mpg">
+                      <span>Horsepower</span>
+                      <p>789<span>hp</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vehicle-card">
+              <div class="details">      
+                <div class="thumb-gallery">
+                  <img class="first" src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/05/2018-McLaren-720S-105.jpg?crop=1xw:1xh;center,center&resize=480:*" />
+                  <img class="second" src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/05/2018-McLaren-720S-101.jpg?crop=1xw:1xh;center,center&resize=480:*" />        
+                </div>
+                <div class="info">
+                    <h3>McLaren 720S</h3>
+                  <div class="price">
+                    <span>Price Starting at</span>
+                    <h4>$288,845</h4>
+                  </div>
+                  <div class="ctas">
+                    <a href="#" class="btn-car primary">Model Details</a>
+                    <a href="#" class="btn-car secondary">Cars for Sale</a>
+                        <div style="clear:both;"></div>
+                      </div>
+                  <div class="desc">
+                    <p>McLaren’s know-how with lightweight, aerodynamic, ferocious supercars is undeniable.</p>
+                  </div>
+                  <div class="specs">
+                    <div class="spec mpg">
+                      <span>EPA City/Hwy</span>
+                      <p>XX/XX<span>mpg</p>
+                    </div>
+                    <div class="spec mpg">
+                      <span>0-60</span>
+                      <p>2.8<span>sec</p>
+                    </div>
+                    <div class="spec mpg">
+                      <span>Horsepower</span>
+                      <p>710<span>hp</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vehicle-card">
+              <div class="details">      
+                <div class="thumb-gallery">
+                  <img class="first" src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/04/2018-Porsche-911-GT3-103.jpg?crop=1xw:1xh;center,center&resize=480:*" />
+                  <img class="second" src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2017/05/2018-porsche-911-gt3-102.jpg?crop=1xw:1xh;center,center&resize=480:*" />        
+                </div>
+                <div class="info">
+                    <h3>Porsche 911 GT3</h3>
+                  <div class="price">
+                    <span>Price Starting at</span>
+                    <h4>$144,650</h4>
+                  </div>
+                  <div class="ctas">
+                    <a href="#" class="btn-car primary">Model Details</a>
+                    <a href="#" class="btn-car secondary">Cars for Sale</a>
+                        <div style="clear:both;"></div>
+                      </div>
+                  <div class="desc">
+                    <p>Flaunting a huge rear wing, giant air intakes, and fender-filling wheels and tires.</p>
+                  </div>
+                  <div class="specs">
+                    <div class="spec mpg">
+                      <span>EPA City/Hwy</span>
+                      <p>14/20<span>mpg</p>
+                    </div>
+                    <div class="spec mpg">
+                      <span>0-60</span>
+                      <p>3.4<span>sec</p>
+                    </div>
+                    <div class="spec mpg">
+                      <span>Horsepower</span>
+                      <p>500<span>hp</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+          
+        </section>
+        
         
         <footer class="footer-container">
         <p>Designed and Developed By Shivendra K C</p>
