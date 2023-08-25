@@ -1,4 +1,4 @@
-
+/*=====================ROOT===================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root{
@@ -14,11 +14,14 @@
 body{
   color: white;
 }
+/*=====================GLOBAL===================*/
 
-/*======================== HOME PAGE =============================*/
 .container{
   font-family: 'Poppins', sans-serif;
 }
+
+/*======================== HOME PAGE =============================*/
+/*-------------NAVBAR---------------*/
 .header{
   display: flex;
   justify-content: space-between;
@@ -74,9 +77,7 @@ body{
   background-size: cover;
   z-index: -1;
 }
-.section{
- 
-  }
+
 .section1-content{
   text-align: end;  
 }
@@ -266,7 +267,8 @@ body{
 }
 
 
-/*=======================SECTION3========================*/
+/*=======================RESGISTER_BUY_SECTION========================*/
+
 .section3{
   margin-top: 2.8cm;
   font-size: 2rem;
@@ -288,13 +290,14 @@ ul li{
 .wrapper{
   width: 840px;
   margin: 0 auto;
-  height: 1200px;
+  height: 100vh;
+  color: black;
 }
 .vehicle-card{
   position: relative;
   display: inline-block;
   width: 240px;  
-  height: 335px;
+  height: 310px;
   overflow: visible;
   z-index: 1;
   border-radius: 2px;
@@ -314,7 +317,7 @@ ul li{
 
 .vehicle-card .details{
   position: absolute;
-  height: 335px;
+  height: 281px;
   width: 240px;
   overflow: hidden;
   background-color: #fff;
@@ -325,7 +328,7 @@ ul li{
   -webkit-transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  height: 490px;
+  height: auto;
   width: 240px;
 }
 .vehicle-card .info{
@@ -335,7 +338,7 @@ ul li{
   margin: 10px 0;
 }
 .thumb-gallery{
-  height: 150px;
+  height: 155px;
 }
 .thumb-gallery img{
   position: absolute; 
@@ -354,7 +357,7 @@ ul li{
 .vehicle-card h3{
   margin: 0;
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: -.5px;
 }
 .vehicle-card .price span{
@@ -418,15 +421,15 @@ ul li{
   margin-bottom: 0.2cm;
 }
 .primary{
-  background-color: #1383b3;
+  background-color: var(--main-color);
   color: #fff;
   margin-right: 10px;
   line-height: 30px;
 }
 .secondary{
   background-color: #fff;
-  color: #1383b3;
-  border: 2px solid #1383b3;  
+  color: var(--main-color);
+  border: 2px solid var(--main-color);  
   line-height: 26px;
 }
 
