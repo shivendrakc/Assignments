@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(back2.jpg);
+    background-size: cover;
+}
+.overlay{
+    background-color: rgb(20 43 26 / 40%);
+}
+.header-container{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+}
+.logo-container h1{
+    color: orange;
+    font-size: 50px;
+}
+.nav-container{
+    display: flex;
+}
+.nav-container ul{
+    display: flex;
+}
+.nav-container ul li{
+    list-style: none;
+    margin: 20px;
+}
+.nav-container ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-container ul li a:hover{
+    color: orange
+}
+
+.main-container{
+    max-width: 75%;
+    margin: auto;
+    padding: 1rem;
+}
+.desc h1{
+    color: rgb(184 237 75);
+    font-size: 50px;
+    margin: 25px 10px;
+}
+.desc p{
+    max-width: 50ch;
+    margin: 20px 10px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.button-container{
+    margin: 3rem 10px 6.45rem 10px;
+}
+.btn{
+    padding: 10px 30px;
+    margin: 12px;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn1, .btn2{
+    border: none;
+    border-radius: 20px;
+    background-color: orange;
+    color: #fff;
+}
+.btn:hover{
+    background-color: green;
+}
+
+  

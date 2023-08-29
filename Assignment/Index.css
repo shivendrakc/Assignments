@@ -630,3 +630,6 @@ form h6{
 .about-image{
   flex: 1;
 }
+.about-image img{
+  width: 300px;
+}
