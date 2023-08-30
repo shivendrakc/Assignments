@@ -10,6 +10,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 body{
   color: white;
@@ -215,11 +216,6 @@ body{
   padding: 20px;
   border-radius: 20px;
 }
-.inner-container{
-  padding: 20px;
-  background-color: #000000bf;
-  border-radius: 15px;
-}
 
 .service-moto{
   display: flex;
@@ -320,7 +316,7 @@ ul li{
 
 .vehicle-card .details{
   position: absolute;
-  height: 281px;
+  height: 315px;
   width: 240px;
   overflow: hidden;
   background-color: #fff;
@@ -331,7 +327,6 @@ ul li{
   -webkit-transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  height: auto;
   width: 240px;
 }
 .vehicle-card .info{
@@ -413,10 +408,8 @@ ul li{
   width: 101px;
   text-align: center;
   border-radius: 2px;
-  font-weight: bold;  
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
+  font-weight: bold;   
+  box-sizing: border-box;         
 }
 .heading h1{
   text-align: center;
@@ -454,7 +447,7 @@ ul li{
 /*=========================Registration FORM==================*/
 
 .form-container{
-  /* background-image: url(Pictures/barry.jpg);
+  /*background-image: url(Pictures/barry.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -472,6 +465,22 @@ ul li{
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
+.inner-container{
+  padding: 20px;
+  background-color: #000000bf;
+  border-radius: 15px;
+  width: 30%;
+}
+.addcar-form-container{
+  padding: 20px;
+  
+}
+
+.pop{
+  text-align: center;
+}
+
+
 /*.forms-container-inner:hover{
   transform: rotateY(180deg);
 }*/
@@ -482,9 +491,7 @@ ul li{
   height: 100%;
   width: 100%;
 }
-.front-box{
 
-}
 .back-box{
   transform: rotateY(180deg);
 }
@@ -582,11 +589,13 @@ form h6{
   padding: 5px 8rem 5px 5px;
   border: 2px solid var(--main-color);
   border-right: none;
+  border-radius: 10px 0 0 10px;
 }
 .search-bar-container input:focus{
   color: black;
   border: 2px solid var(--main-color);
   outline: none;
+  border-right: none;
 }
 .search-bar-container button{
   padding: 5px 3px 5px 3px;
@@ -595,10 +604,12 @@ form h6{
   border: 2px solid var(--main-color);
   transition: 0.4s;
   border-left: none;
+  border-radius: 0 10px 10px 0;
 }
 .search-bar-container button:hover{
   color: var(--main-color);
   background-color: white;
+
 }
 
 
@@ -607,6 +618,7 @@ form h6{
   color: black;
   max-width: 80%;
   margin: auto;
+  min-height: 100vh;
 }
 .about-section-1{
   display: flex;
@@ -620,16 +632,87 @@ form h6{
   font-size: 50px;
 }
 .details p{
+  margin-top: 25px;
   font-size: 20px;
   max-width: 50ch;
 }
 .contact{
-  font-weight: 700;
-  font-size: 22px !important;
+  font-weight: 500;
 }
 .about-image{
   flex: 1;
 }
 .about-image img{
-  width: 300px;
+  margin-left: 4cm;
+  width: 400px;
+}
+
+/*==================Contact Container==================*/
+
+
+.contact-container{
+  color: black;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.contact-section{
+  background-color: var(--main-color);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 3cm;
+  color: white;
+}
+
+/*=================Team Container ====================*/
+
+.team-container{
+  max-width: 80%;
+  margin: auto;
+  color: black;
+}
+.team-container h1{
+  color: var(--main-color);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1cm;
+}
+.team-card-container{
+  padding: 20px;
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 2cm;
+  text-align: center;
+}
+.team-card{
+  width: 33.3%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+.team-card img{
+  height: 150px;
+}
+.team-content{
+    padding: 20px;
+    margin: 10px;
+}
+.title{
+  color: grey;
+  margin: 10px;
+}
+.team-content p{
+  max-width: 30ch;
+  margin: 5px;
+}
+.team-content .Email{
+  margin: 15px;
+  color: var(--main-color);
 }
